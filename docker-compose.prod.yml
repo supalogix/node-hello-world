@@ -11,5 +11,5 @@ services:
       driver: awslogs
       options:
         awslogs-region: "us-west-1"
-        awslogs-group: "log-group"
+        awslogs-group: "log-group-${HOSTNAME}"
         awslogs-stream: "log-stream"
