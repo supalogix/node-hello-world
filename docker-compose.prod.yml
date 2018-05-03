@@ -7,6 +7,8 @@ services:
       context: .
     ports:
       - 80:8080
+    environment:
+      - HOSTNAME
     logging:
       driver: awslogs
       options:
